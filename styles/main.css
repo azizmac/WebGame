@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    width: 100%;
+}
+
+.game-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.health-bar {
+    text-align: center;
+}
+
+.hearts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.heart {
+    font-size: 1.5rem;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.2rem;
+    min-height: 2rem;
+}
+
+.message.success {
+    color: #28a745;
+}
+
+.message.error {
+    color: #dc3545;
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+    
+    .game-container {
+        padding: 1rem;
+    }
+    
+    .heart {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-container {
+        padding: 0.8rem;
+    }
+    
+    .heart {
+        font-size: 1rem;
+    }
+} 
